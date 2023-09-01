@@ -10,7 +10,6 @@ async function getBalances(address){
    let ct=0;
    for(const address of addresses){
     console.log(`Adresses ${ct} balance:`, await getBalances(address));
-    ct++;
    }
  }
 
@@ -18,7 +17,7 @@ async function getBalances(address){
   for(const memo of memos){
     const timestamp = memo.timestamp;
     const name = memo.name;
-    const from = memo.address;
+    const from = memo.from;
     const message = memo.message;
 
     console.log("[", name, timestamp, from, message, "]");
@@ -43,8 +42,11 @@ async function main() {
   await contract.connect(from1).send("test1", "test1", amount);
   await contract.connect(from2).send("test2", "test2", amount);
   await contract.connect(from3).send("test3", "test3", amount);
-  consoleBalances(addresses);
   console.log("after transaction");
+  consoleBalances(addresses);
+
+  const memos = await contract.getMemos();
+  consoleMemos(memos);
 }
 
 

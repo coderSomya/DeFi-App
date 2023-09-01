@@ -2,5 +2,11 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
     "hardhat": "^2.13.0"
+  },
+  "scripts": {
+    "dev": "npx hardhat run scripts/deploy.js"
+  },
+  "dependencies": {
+    "create-react-app": "^5.0.1"
   }
 }
