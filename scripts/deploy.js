@@ -28,7 +28,7 @@ async function main() {
   const [owner, from1, from2, from3] = await hre.ethers.getSigners();
   const defi = await hre.ethers.getContractFactory("defi");
   const contract = await defi.deploy();
-  // console.log(contract);
+  console.log(contract);
   
   contract.deployed();
   console.log(contract.address);
