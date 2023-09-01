@@ -3,8 +3,8 @@ This is a web3.0 app based on Etherjs, Hardhat, React and Solidity
 
 # steps to follow
 
-## create a new directory and clone the project
-## ensure that hardhat and its corresponding dependencies are installed
+### create a new directory and clone the project
+### ensure that hardhat and its corresponding dependencies are installed
 
 # run
 ```
