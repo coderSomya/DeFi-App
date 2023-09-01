@@ -20,6 +20,7 @@ const Buy= ({state}) => {
 
   return (
     <>
+    <center> Send me tokens via blockchain 😊 </center>
     <form id="app_form" action="" onSubmit={buyEth}>
         <label className= "name_label" htmlFor="">name</label>
         <input className="name_input" type="text" id="name" placeholder='enter your name' />
