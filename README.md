@@ -28,3 +28,9 @@ npx run hardhat scripts/deploy.js
 add **GOERLI_URL**, **GOERLI_API_KEY**, **PRIVATE_KEY**, and **CONTRACT_ADDRESS** in .env file
 
 
+### to run tests
+```
+truffle console
+truffle test
+```
+
