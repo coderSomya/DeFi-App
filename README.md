@@ -25,6 +25,6 @@ npx run hardhat scripts/deploy.js
 ```
 
 ### set up new project in Goerli
-add **GOERLI_URL**, **GOERLI_API_KEY**, **PRIVATE_KEY**, and CONTRACT_ADDRESS in .env file
+add **GOERLI_URL**, **GOERLI_API_KEY**, **PRIVATE_KEY**, and **CONTRACT_ADDRESS** in .env file
 
 
