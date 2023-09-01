@@ -1,0 +1,43 @@
+/* Memo Table Styles */
+.memo_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  /* Table Header */
+  .memo_table th {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  /* Table Body */
+  .memo_table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Table Rows */
+  .memo_table_row:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 600px) {
+    .memo_table {
+      font-size: 14px;
+    }
+  
+    .memo_table th, .memo_table td {
+      padding: 8px;
+    }
+  
+    .memo_table th {
+      font-size: 16px;
+    }
+  }
+  
